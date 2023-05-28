@@ -72,4 +72,14 @@
 .contentDiv{
     padding-top: 80px;
 }
-  
+.contactsContainer{
+    width: 85%;
+}
+
+.contactsBtn{
+    background-color:#fa8c5c;
+    border-radius: 0%;
+    border: none;
+    text-transform: uppercase;
+    padding: 5% 8% 5% 8%;
+}
