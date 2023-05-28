@@ -32,7 +32,7 @@
     padding: .75% 2% .75% 2%;
 }
 .imageContainer{
-    width: 85%;
+    width: 65%;
 }
 .textLine{
     border-top: 2px solid black;
@@ -73,7 +73,7 @@
     padding-top: 80px;
 }
 .contactsContainer{
-    width: 85%;
+    width: 80%;
 }
 
 .contactsBtn{
@@ -82,4 +82,23 @@
     border: none;
     text-transform: uppercase;
     padding: 5% 8% 5% 8%;
+}
+.custcard{
+    font-weight: bold;
+    color: black;
+    width: 20em;
+}
+.custcard p{
+    font-size: 1.2em;
+}
+.custcardTitle{
+    font-size: 1.5em;
+}
+.contactcard{
+    text-align: left;
+}
+.socialmediaicons{
+    color: white;
+    background-color: #fa8c5c;
+    border: none;
 }
