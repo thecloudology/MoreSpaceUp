@@ -15,6 +15,43 @@
 
 </head>
 <body>
+<!--Start of Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Book Now</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="cs-form">
+          <div class="mb-3">
+            <label for="cust-name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="cust-name" name="fullName">
+          </div>
+          <div class="mb-3">
+            <label for="phoneNo" class="col-form-label">Phone Number:</label>
+            <input type="text" class="form-control" id="phoneNo" name = "phoneNum">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="col-form-label">Email:</label>
+            <input type="text" class="form-control" id="email" name="emailAdd">
+          </div>
+          
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">How can we help you?:</label>
+            <textarea class="form-control" id="message-text" name = "msg-txt"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="input" class="btn btn-primary" form="cs-form">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End of Modal-->
   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="bi bi-arrow-up-circle"></i></button>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbarCustomBg fixed-top">
         <div class="container-fluid">
@@ -36,7 +73,7 @@
             </ul>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-card-list"></i> Get Quote</a>
+                  <a class="nav-link" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="bi bi-card-list"></i> Get Quote</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="tel:+1-470-485-4611"><i class="bi bi-telephone"></i> Call Now</a>
@@ -57,7 +94,7 @@
 Open today until 6:00 PM
         </div>
       <div class="mt-3">
-        <button type="button" class="btn btn-primary btn-lg customBtn">Get Quote</button>
+        <button type="button" class="btn btn-primary btn-lg customBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Quote</button>
       </div>
       <div class="mt-5 imageContainer mx-auto">
         <img src="https://www.gstatic.com/bfe/apps/website/img/h/81484571-crates-1440.jpg" class="img-fluid profImg" alt="">
@@ -256,7 +293,7 @@ Open today until 6:00 PM
   
 </div>
 <!-- End of .container -->
-<div class="customRoundButton" style="top:100px; right:20px;">Get Quote</div>
+<div class="customRoundButton" style="top:100px; right:20px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Quote</div>
 
     <script>
       // Get the button
